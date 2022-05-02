@@ -2,6 +2,11 @@ body {
     background-color: lightgray;
 }
 
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
 button {
     cursor: pointer;
     text-align: center;
