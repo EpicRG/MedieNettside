@@ -4,7 +4,6 @@ body {
 
 button {
     cursor: pointer;
-    border: 1px solid #555;
     text-align: center;
     position: absolute;
     right: 0;
@@ -16,4 +15,28 @@ button {
 .dark {
     background-color: #222;
     color: #e6e6e6;
+}
+
+.topnav {
+    background-color: #222;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
 }
