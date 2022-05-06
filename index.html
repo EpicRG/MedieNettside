@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/mns2xlp.css">
     <title>Velkommen til Media</title>
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/theme.css">
@@ -12,15 +13,25 @@
 
 <body>
 
-    <div class="topnav">
-        <a class="active" href="index.html">Hjem</a>
-        <a href="HTML/news.html">Nyhets Feed</a>
-        <a href="HTML/404.html">Kontakt oss</a>
-        <a href="HTML/404.html">Om oss</a>
-
+    <div class="top-bar">
+        <ul>
+            <li><img src="image/ASM_Logo.png" href="index.html" alt="Logo"></li>
+            <div class="dropdown">
+                <li><img src="image/Menu_temp.png" alt="dropdown"></li>
+                <div class="dropdown-content">
+                    <li><a href="HTML/news.html">NEWS</a></li>
+                </div>
+            </div>
+            </li>
+        </ul>
     </div>
 
-    <h1>Velkommen!</h1>
+    <h1>Velkommen Til Media!</h1>
+
+    <p1>På Media linjen på Amalie Skram er det din tur til å være kreativ.</p1>
+
+    <!--<img class="FrontSideImage" src="" alt="robin image">-->
+
     <button onclick="themeToggle()">Switch mode</button>
 
     <script>
@@ -28,7 +39,6 @@
             var element = document.body;
             element.classList.toggle("dark");
         }
-    </script>
     </script>
 </body>
 

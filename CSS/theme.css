@@ -4,7 +4,13 @@ body {
 
 h1 {
     font-size: 64px;
-    text-align: center;
+    text-align: left;
+    padding-left: 2%;
+}
+
+p1 {
+    text-align: left;
+    padding: 2%;
 }
 
 button {
@@ -15,6 +21,7 @@ button {
     bottom: 0;
     margin-right: 15px;
     margin-bottom: 15px;
+    position: fixed;
 }
 
 .dark {
@@ -22,26 +29,63 @@ button {
     color: #e6e6e6;
 }
 
-.topnav {
-    background-color: #222;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
+    background-color: #333;
 }
 
-.topnav a {
-    float: left;
-    color: #f2f2f2;
+li {
+    display: inline;
+}
+
+li a {
+    display: block;
+    color: #48C2C5;
     text-align: center;
-    padding: 14px 16px;
+    font-family: minion-pro-caption, serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 12px;
     text-decoration: none;
-    font-size: 17px;
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+li img {
+    display: block;
+    float: left;
+    width: 150px;
 }
 
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+li a:hover {
+    background-color: #111;
+}
+
+li img:hover {
+    background: #111;
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: static;
+    background-color: #333;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+img {
+    float: right;
+    padding-right: 10px;
+    padding-left: 20px;
 }
